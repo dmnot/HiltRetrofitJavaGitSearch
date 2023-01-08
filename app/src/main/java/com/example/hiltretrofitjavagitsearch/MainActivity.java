@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onChanged(List<RecyclerData> recyclerData) {
                 if(recyclerData != null){
-                    recyclerViewAdapter.setListItems(recyclerData);
+                    recyclerViewAdapter.setListDataItems(recyclerData);
                     recyclerViewAdapter.notifyDataSetChanged();
                 }
                 else{

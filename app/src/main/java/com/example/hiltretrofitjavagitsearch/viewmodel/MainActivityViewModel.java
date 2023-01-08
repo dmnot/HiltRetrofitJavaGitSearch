@@ -27,8 +27,10 @@ public class MainActivityViewModel extends ViewModel {
     public MutableLiveData<List<RecyclerData>> getLiveData() {
         return liveData;
     }
+    //-----------------------------------------------------------------------------
     public void makeAPICall() {
         RetroRepository retroRepository = new RetroRepository(retroServiceInterface);
         retroRepository.makeAPICall("hilt",liveData);
     }
+    //-----------------------------------------------------------------------------
 }
